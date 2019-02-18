@@ -13,7 +13,13 @@ end
     "this is the Evidence route"
   end
 
-get '/cat' do
-  @variable = ["Amigo", "Oscar", "Viking"].sample
+# get '/random-cat' do
+#   @name = ["Amigo", "Oscar", "Viking"].sample
+#   erb:index
+# end
+
+get '/named-cat' do
+   p @name = params[:name]
+   p @last_name = params[:last_name]
   erb:index
 end
