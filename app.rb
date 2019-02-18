@@ -14,5 +14,6 @@ end
   end
 
 get '/cat' do
-  erb(:index)
+  @variable = ["Amigo", "Oscar", "Viking"].sample
+  erb:index
 end
